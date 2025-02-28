@@ -12,6 +12,8 @@ nav ul {
     background-color: #333;
     overflow: hidden;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Flexbox */
 }
 
 nav ul li {
@@ -31,20 +33,32 @@ nav ul li a:hover {
 }
 
 header, section {
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 5px;
 }
-
+article {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* Estilo responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     nav ul {
-        display: flex;
+        /*display: flex;*/
         flex-direction: column;
     }
 
-    nav ul li {
-        float: none;
+@media (max-width: 600px) {
+    nav ul {
+        /*display: flex;*/
+        flex-direction: column;
     }
+
+    /*nav ul li {
+        float: none;
+    }*/
 }
 
 
